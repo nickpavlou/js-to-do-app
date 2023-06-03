@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #0b87ff;
+}
+
+.container {
+  border: 1px solid black;
+  width: 90%;
+  max-width: 34rem;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+
+#new-task {
+  position: relative;
+  background-color: #fff;
+  padding: 1.8rem 1.25rem;
+  border-radius: 0.3rem;
+  box-shadow: 0 1.25rem 1.8rem rgba(1, 24, 48, 0.15);
+  display: grid;
+  grid-template-columns: 9fr 3fr;
+  gap: 1rem;
+}
+
+#new-task input {
+  font-size: 1rem;
+  border: none;
+  border-bottom: 2px solid #d1d3d4;
+  padding: o.8rem 0.5rem;
+  color: #111111;
+  font-weight: 500;
+}
+
+#new-taskinput: focus {
+  outline: none;
+  border-color: #ob87ff;
+}
+
+#new-task button {
+  font-weight: 500;
+  font-size: 1rem;
+  background-color: #0b87ff;
+  color: #fff;
+  outline: none;
+  border: none;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+
+#tasks {
+  background-color: #fff;
+  position: relative;
+  padding: 1.8rem 1.25rem;
+  margin-top: 3.8rem;
+  width: 100%;
+  box-shadow: 0 1.25rem 1.8rem rgba(1, 24, 48, 0.15);
+  border-radius: 0.6rem;
+}
+
+.task {
+  background-color: #fff;
+  padding: 0.3rem 0.6rem;
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid #d1d3d4;
+  cursor: pointer;
+}
+
+.task span {
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+.task button {
+  color: #fff;
+  padding: 0.8rem 0;
+  width: 2.8rem;
+  border-radius: 0.3rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.delete {
+  background-color: #fb3b3b;
+  margin-left: auto;
+  margin-right: 3rem;
+}
+
+.completed {
+  text-decoration: line-through;
+}
